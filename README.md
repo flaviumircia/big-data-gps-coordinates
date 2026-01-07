@@ -7,7 +7,7 @@ This ensures complete reproducibility across Windows, macOS, and Linux.
 
 1. Build and start the container: ```docker-compose up --build```
 
-2. Open your browser and go to: http://localhost:8888
+2. Open your browser and go to: http://localhost:8888 (you may need to enter a token, the token is generated in docker logs)
 
 3. Select the ```Python (gps-analytics)``` kernel in Jupyter Lab.
 
