@@ -3,6 +3,7 @@
 ### Build the project
 
 This ensures complete reproducibility across Windows, macOS, and Linux.
+0. You need to create a folder called ```data``` and to add ```gps_cleaned.csv``` inside it
 
 1. Build and start the container: ```docker-compose up --build```
 
@@ -13,6 +14,7 @@ This ensures complete reproducibility across Windows, macOS, and Linux.
 Your notebooks and source code are automatically synced thanks to mounted volumes.
 
 Jupyter Lab is running inside the container, with PySpark and all dependencies pre-installed.
+
 
 ## Something has changed in environment.yaml?
 
