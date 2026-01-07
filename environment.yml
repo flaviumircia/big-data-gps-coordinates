@@ -3,11 +3,11 @@ channels:
   - conda-forge
 dependencies:
   - python=3.12
+  - pyspark
   - pip
   - pip:
       - jupyterlab
       - ipykernel
-      - pyspark
       - pandas
       - numpy
       - scikit-learn
