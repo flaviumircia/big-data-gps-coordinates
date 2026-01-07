@@ -13,3 +13,7 @@ This ensures complete reproducibility across Windows, macOS, and Linux.
 Your notebooks and source code are automatically synced thanks to mounted volumes.
 
 Jupyter Lab is running inside the container, with PySpark and all dependencies pre-installed.
+
+## Something has changed in environment.yaml?
+
+Use ```docker-compose up --build``` in a terminal to rebuild the whole docker image.

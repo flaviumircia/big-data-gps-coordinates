@@ -5,8 +5,7 @@ services:
     ports:
       - "8888:8888"
     volumes:
-      - ./notebooks:/workspace/notebooks
-      - ./src:/workspace/src
+      - .:/workspace
     environment:
       - CONDA_ENV=gps-analytics
     tty: true
