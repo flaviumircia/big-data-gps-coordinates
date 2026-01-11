@@ -4,8 +4,17 @@ services:
     container_name: gps_jupyter
     ports:
       - "8888:8888"
+      - "4040:4040"
     volumes:
       - .:/workspace
     environment:
       - CONDA_ENV=gps-analytics
-    tty: true
+
+  socket:
+    build: .
+    container_name: socket_stream
+    ports:
+      - "9999:9999"
+    volumes:
+      - .:/workspace
+    command: conda run --no-capture-output -n gps-analytics python src/socket_mock.py
