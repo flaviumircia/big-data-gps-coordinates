@@ -4,6 +4,7 @@ channels:
 dependencies:
   - python=3.12
   - pyspark
+  - openjdk=17
   - pip
   - pip:
       - jupyterlab
