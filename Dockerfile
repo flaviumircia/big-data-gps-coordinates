@@ -17,6 +17,10 @@ SHELL ["conda", "run", "-n", "gps-analytics", "/bin/bash", "-c"]
 ENV JAVA_HOME=/opt/conda/envs/gps-analytics
 ENV PATH=$JAVA_HOME/bin:$PATH
 
+# Install PostgreSQL JDBC driver for Spark
+RUN wget -O /opt/postgresql-42.6.0.jar \
+    https://repo1.maven.org/maven2/org/postgresql/postgresql/42.6.0/postgresql-42.6.0.jar
+
 # Install ipykernel
 RUN python -m ipykernel install --user --name gps-analytics --display-name "Python (gps-analytics)"
 
